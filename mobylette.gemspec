@@ -7,9 +7,9 @@ require "mobylette/version"
 Gem::Specification.new do |s|
   s.name        = "mobylette"
   s.version     = Mobylette::VERSION
-  s.authors     = ["Tiago Scolari"]
-  s.email       = ["tscolari@gmail.com"]
-  s.homepage    = "https://github.com/tscolari/mobylette"
+  s.authors     = ["Ruan Silva"]
+  s.email       = ["ruan.kaylo@gmail.com"]
+  s.homepage    = "https://github.com/RuanAyram/mobylette"
   s.summary     = "Mobile request handling for your Rails app."
   s.description = "Adds the mobile format for rendering views for mobile device."
 
