@@ -1,3 +1,4 @@
+require 'action_view/template/resolver'
 module Mobylette
   module Resolvers
     class ChainedFallbackResolver < ::ActionView::FileSystemResolver
@@ -43,7 +44,7 @@ module Mobylette
         # checks if the format has a fallback chain
         if @fallback_formats.has_key?(details[:formats].first)
           details = details.dup
-          details[:formats] = Array.wrap(@fallback_formats[details[:formats].first]) 
+          details[:formats] = Array.wrap(@fallback_formats[details[:formats].first])
         end
         super(name, prefix, partial, details)
       end
